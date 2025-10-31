@@ -25,6 +25,7 @@
 // }
 
 import React, { Component } from 'react'
+import Should_update from './class-components/life-cycle-methods/Should_update'
 // import CounterTask from './class-components/task/ConterTask'
 // import Mounting from './class-components/life-cycle-methods/Mounting'
 // import Updating from './class-components/life-cycle-methods/Updating'
@@ -38,6 +39,8 @@ export default class App extends Component {
         {/* <Mounting/> */}
         {/* <Updating/> */}
         {/* <UnMounting/> */}
+        {/* <ButtonUnMount/> */}
+        <Should_update/>
       </div>
     )
   }
