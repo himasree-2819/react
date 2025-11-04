@@ -1,0 +1,25 @@
+import React, { useEffect, useState } from 'react'
+
+const UserList = () => {
+    const [User, setuser] = useState([]);
+    useEffect(() => {
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(res => res.json())
+            .then(data => setuser(data))
+    }, []);
+    return (
+        <div>
+            <h2>User List</h2>
+            <ul>
+                {User.map(usr => (
+                    <li key={usr.id}>
+                        <h3>{usr.name}</h3>
+                        <p>Email: {usr.email}</p>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    )
+}
+
+export default UserList
