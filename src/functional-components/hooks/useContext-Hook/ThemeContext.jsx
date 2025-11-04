@@ -1,23 +1,24 @@
-import { Children, createContext } from "react";
+import { createContext, useState } from "react";
 
 export const ThemeContext = createContext();
 
-export const ThemeProvider = ({ Children }) => {
+export const ThemeProvider = ({children}) => {
 
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode]=useState(false);
 
     const toggleTheme = () => setDarkMode(!darkMode);
 
-
-    return (
-        <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
+    return(
+        <ThemeContext.Provider value={{darkMode, toggleTheme}}>
             <div style={{
-                background: darkMode ? '#333' : '#fff',
-                color: darkMode ? '#fff' : '#333',
-                minHeight: '100vh',
-                padding: '1 rem'
+                background: darkMode? '#333' : '#fff',
+                color: darkMode ? '#fff' : '#000',
+                minHeight :'100vh',
+                minWidth: '600vh',
+                padding: '1rem' 
             }}>
-
+                {children}
+                
             </div>
 
         </ThemeContext.Provider>

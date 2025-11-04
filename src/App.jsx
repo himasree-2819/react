@@ -5,8 +5,12 @@
 // import Calling_function from './embedding-expression/calling_function'
 // import Conditional from './embedding-expression/Conditional'
 
-import OnMount from "./functional-components/hooks/useEffect-Hook/OnMount"
-import SpecificValue from "./functional-components/hooks/useEffect-Hook/SpecificValue"
+import Home from "./functional-components/hooks/useContext-Hook/dark&light-mode/Home"
+import { ThemeProvider } from "./functional-components/hooks/useContext-Hook/ThemeContext"
+
+// import { useContext } from "react"
+// import OnMount from "./functional-components/hooks/useEffect-Hook/OnMount"
+// import SpecificValue from "./functional-components/hooks/useEffect-Hook/SpecificValue"
 
 // import ProfileForm from "./functional-components/hooks/UseState/ProfileForm"
 // import ToggleButton from "./functional-components/hooks/UseState/ToggleButton"
@@ -50,7 +54,13 @@ return (
 // {/* <ProfileForm/> */}
 // {/* <ToggleButton/> */}
 // {/* <OnMount/> */}
-<SpecificValue/>
+// {/* <SpecificValue/> */}
+
+//---------- useContext-Hooks-------------------
+<ThemeProvider>
+    <Home/>
+</ThemeProvider>
+
 // {/* </> */ }
 )
 }
