@@ -5,8 +5,20 @@
 // import Calling_function from './embedding-expression/calling_function'
 // import Conditional from './embedding-expression/Conditional'
 
-import Home from "./functional-components/hooks/useContext-Hook/dark&light-mode/Home"
-import { ThemeProvider } from "./functional-components/hooks/useContext-Hook/ThemeContext"
+import { Link, Route, Routes } from "react-router-dom"
+import Navbar from "./nested-routing/Navbar"
+// import About from "./react-router-dom/About"
+// import Home from "./react-router-dom/Home"
+// import Product from "./dynamic-routing/Product"
+// import ProductDetailPage from "./dynamic-routing/ProductDetailPage"
+
+// import { UserApiContext, UserApiProvider } from "./functional-components/hooks/useContext-Hook/user-list/UserApiContext"
+// import { UserApiContext, UserApiProvider } from "./functional-components/hooks/useContext-Hook/user-list/UserApiContext"
+// import UserList from "./functional-components/hooks/useContext-Hook/user-list/UserList"
+
+
+// import Home from "./functional-components/hooks/useContext-Hook/dark&light-mode/Home"
+// import { ThemeProvider } from "./functional-components/hooks/useContext-Hook/ThemeContext"
 
 // import { useContext } from "react"
 // import OnMount from "./functional-components/hooks/useEffect-Hook/OnMount"
@@ -29,40 +41,65 @@ import { ThemeProvider } from "./functional-components/hooks/useContext-Hook/The
 // import State from './functional-components/State'
 
 // import Counter from "./Class-components/Counter"
-function App () {
+function App() {
 
 
-return (
-// <>
-// {/* <Welcome/> */ }
-// {/* <Calling_function/> */ }
-// {/* <Conditional/> */ }
-// {/* <RenderingLists/> */ }
+    return (
+        <>
+            {/* <Welcome/> */}
+            {/* <Calling_function/> */}
+            {/* <Conditional/> */}
+            {/* <RenderingLists/> */}
 
-// {/* .......class components...... */ }
-// {/* <Basic/> */ }
 
-// ----------- functional components-----------------
-// {/* <Basic/> */}
-// {/* <State/> */}
-// {/* <Props/> */}
+            {/* // ----------- functional components----------------- */}
+            {/* // <Basic/> */}
+            {/* // <State/> */}
+            {/* <Props/> */}
 
-//---------------Hooks----------------------
-// {/* <Timer/> */}
-// {/* <UserList/> */}
-// {/* <NameForm/> */}
-// {/* <ProfileForm/> */}
-// {/* <ToggleButton/> */}
-// {/* <OnMount/> */}
-// {/* <SpecificValue/> */}
+            {/* //---------------Hooks---------------------- */}
+            {/* // <Timer/> */}
+            {/* <UserList/> */}
+            {/* <NameForm/> */}
+            {/* <ProfileForm/> */}
+            {/* <ToggleButton/> */}
+            {/* <OnMount/> */}
+            {/* <SpecificValue/> */}
 
-//---------- useContext-Hooks-------------------
-<ThemeProvider>
-    <Home/>
-</ThemeProvider>
+            {/* //---------- useContext-Hooks------------------- */}
+            {/* <ThemeProvider>
+         <Home/>
+         </ThemeProvider>
+          */}
+            {/* <UserApiProvider>
+             <UserList/>
+         </UserApiProvider> */}
 
-// {/* </> */ }
-)
+            {/* //-----------------React-router-dom------------- */}
+            {/* //1.---------basic routing---------- */}
+            {/* <div>
+                <nav>
+                    <Link to='/'>Home</Link>
+                    <Link to='/about'>About</Link>
+                </nav>
+            </div>
+
+
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+            </Routes> */}
+            {/* ------2.dynamic routing ---------*/}
+            {/* <Routes>
+                <Route path="/" element={<Product />} />
+                <Route path="/products/:id" element={<ProductDetailPage />} />
+            </Routes> */}
+
+            {/* --------3.nested-routing------ */}
+            <Navbar />
+
+        </>
+    )
 }
 export default App
 // import React, { Component } from 'react'
@@ -76,6 +113,8 @@ export default App
 //   render() {
 //     return (
 //       <div>
+{/* .......class components...... */ }
+{/* <Basic/> */ }
 {/* <CounterTask/> */ }
 {/* <Mounting/> */ }
 {/* <Updating/> */ }
