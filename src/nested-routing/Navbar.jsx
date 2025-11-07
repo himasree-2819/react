@@ -32,7 +32,7 @@ const Navbar = () => {
         {/* about */}
         <li>
           <NavLink to='/about'
-            className={({ isActive }) => (isActive ? "active" : "")}
+            className={({ isActive }) => (isActive? "active" : "")}
             onClick={() => setMenuOpen(false)}>
 
 
@@ -43,7 +43,7 @@ const Navbar = () => {
 
         {/* service */}
         <li>
-          <NavLink to='/service' className={({ isActive }) => (isActive ? "active" : "")}
+          <NavLink to='/service' className={({ isActive }) => (isActive? "active" : "")}
             onClick={() => setMenuOpen(false)}>
 
 
