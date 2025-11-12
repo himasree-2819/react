@@ -5,6 +5,15 @@
 // import Calling_function from './embedding-expression/calling_function'
 // import Conditional from './embedding-expression/Conditional'
 
+import SetupForm from "../formwork/Setupform"
+import Crud from "./local-storage/Crud"
+
+// import Form from "./form/Form"
+
+// import SimpleForm from "./form/SimpleForm"
+// import RealWorld from "./react-keys/RealWorld"
+
+
 // import { Link, Route, Routes } from "react-router-dom"
 // import Navbar from "./nested-routing/Navbar"
 // import Home from './nested-routing/pages/Home'
@@ -117,11 +126,19 @@ function App() {
 
 
                 {/* </Routes> */}
-            {/* </div> */} */
+            {/* </div> */} 
 
             {/* --------react keys------ */}
+        {/* <Items/> */}
+        {/* <RealWorld/> */}
+        {/* ----------form----------- */}
+     {/* <SimpleForm/> */}
+     {/* <Form/> */}
 
-
+     {/* ------------local-storage--------------- */}
+          {/* <Crud/> */}
+          {/* ---------work---------- */}
+          <SetupForm/>
         </>
     )
 }
