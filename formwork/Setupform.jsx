@@ -40,7 +40,6 @@ const SetupForm = () => {
           <div className="gender-group">
             <label><input type="radio" name="gender" value="male" onChange={handleChange} /> Male</label>
             <label><input type="radio" name="gender" value="female" onChange={handleChange} /> Female</label>
-            
           </div>
 
           <label>Date of Birth</label>
