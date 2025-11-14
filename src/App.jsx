@@ -5,8 +5,8 @@
 // import Calling_function from './embedding-expression/calling_function'
 // import Conditional from './embedding-expression/Conditional'
 
-import SetupForm from "../formwork/Setupform"
-// import Crud from "./local-storage/Crud"
+// import SetupForm from "../formwork/Setupform"
+import Crud from "./local-storage/Crud"
 
 // import Form from "./form/Form"
 
@@ -136,9 +136,9 @@ function App() {
      {/* <Form/> */}
 
      {/* ------------local-storage--------------- */}
-          {/* <Crud/> */}
+          <Crud/>
           {/* ---------work---------- */}
-          <SetupForm/>
+          {/* <SetupForm/> */}
         </>
     )
 }
