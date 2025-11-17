@@ -1,12 +1,15 @@
-// import './App.css'
+import './App.css'
 // import Basic from './Class-components/Basic'
 // import RenderingLists from './embedding-expression/RenderingLists'
 // import Welcome from './embedding-expression/welcome'
 // import Calling_function from './embedding-expression/calling_function'
 // import Conditional from './embedding-expression/Conditional'
 
+import AxiosGet from "./axios/AxiosGet"
+import AxiosPost from './axios/AxiosPost'
+
 // import SetupForm from "../formwork/Setupform"
-import Crud from "./local-storage/Crud"
+// import Crud from "./local-storage/Cru
 
 // import Form from "./form/Form"
 
@@ -136,9 +139,15 @@ function App() {
      {/* <Form/> */}
 
      {/* ------------local-storage--------------- */}
-          <Crud/>
+          {/* <Crud/> */}
           {/* ---------work---------- */}
           {/* <SetupForm/> */}
+
+          {/* Axios */}
+
+          {/* <AxiosGet/> */}
+          <AxiosPost/>
+          
         </>
     )
 }
