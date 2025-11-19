@@ -7,6 +7,7 @@ import './App.css'
 
 import AxiosGet from "./axios/AxiosGet"
 import AxiosPost from './axios/AxiosPost'
+import Player from './functional-components/hooks/UseRef-Hook/Player'
 
 // import SetupForm from "../formwork/Setupform"
 // import Crud from "./local-storage/Cru
@@ -92,6 +93,8 @@ function App() {
             {/* <UserApiProvider>
              <UserList/>
          </UserApiProvider> */}
+         
+           {/* <Player/> */}
 
             {/* //-----------------React-router-dom------------- */}
             {/* //1.---------basic routing---------- */}
@@ -146,7 +149,7 @@ function App() {
           {/* Axios */}
 
           {/* <AxiosGet/> */}
-          <AxiosPost/>
+          {/* <AxiosPost/> */}
           
         </>
     )
