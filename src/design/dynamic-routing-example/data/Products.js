@@ -1,5 +1,5 @@
 import shoe from '../images/shoe.jpg'
-import shoe1 from '../images/shoe1.jpg'
+import shoe1 from '../images/shoe.jpg'
 import shoe2 from '../images/shoe2.jpg'
 import shoe3 from '../images/shoe3.jpg'
 

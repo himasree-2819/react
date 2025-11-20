@@ -1,7 +1,8 @@
 import React from 'react'
 import './ProductPage.css'
-import { products } from '../Products'
+import { products } from './data/Products'
 import ProductCard from './ProductCard'
+import { Link } from 'react-router-dom'
 
 
 const ProductPage = () => {

@@ -8,7 +8,7 @@ import './App.css'
 import AxiosGet from "./axios/AxiosGet"
 import AxiosPost from './axios/AxiosPost'
 import Player from './functional-components/hooks/UseRef-Hook/Player'
-import ProductPage from './new-folder-design/dynamic-routing-example/ProductPage'
+import ProductPage from './design/dynamic-routing-example/ProductPage'
 
 // import SetupForm from "../formwork/Setupform"
 // import Crud from "./local-storage/Cru
