@@ -5,10 +5,14 @@ import './App.css'
 // import Calling_function from './embedding-expression/calling_function'
 // import Conditional from './embedding-expression/Conditional'
 
-import AxiosGet from "./axios/AxiosGet"
-import AxiosPost from './axios/AxiosPost'
-import Player from './functional-components/hooks/UseRef-Hook/Player'
+// 
+
+
 import ProductPage from './design/dynamic-routing-example/ProductPage'
+import { Route, Routes } from 'react-router-dom'
+import ProductDetails from './design/dynamic-routing-example/ProductDetails'
+import Parent from './functional-components/hooks/UseCallback/Parent'
+import UseMemo from './functional-components/hooks/UseMemo/UseMemo'
 
 // import SetupForm from "../formwork/Setupform"
 // import Crud from "./local-storage/Cru
@@ -94,8 +98,10 @@ function App() {
             {/* <UserApiProvider>
              <UserList/>
          </UserApiProvider> */}
-         
-           {/* <Player/> */}
+
+            {/* <Player/> */}
+            {/* <Parent/> */}
+            <UseMemo/>
 
             {/* //-----------------React-router-dom------------- */}
             {/* //1.---------basic routing---------- */}
@@ -125,36 +131,40 @@ function App() {
                     <Route path='/about' element={<About />} />
 
                     {/* nested routing starts here */}
-                    {/* <Route path='service' element={<Service />} />
+            {/* <Route path='service' element={<Service />} />
                     <Route path='web-development' element={<WebDev />} />
                     <Route path='app-development' element={<AppDev />} />
                     <Route path='design' element={<Design />} /> */}
 
 
 
-                {/* </Routes> */}
-            {/* </div> */} 
+            {/* </Routes> */}
+            {/* </div> */}
 
             {/* --------react keys------ */}
-        {/* <Items/> */}
-        {/* <RealWorld/> */}
-        {/* ----------form----------- */}
-     {/* <SimpleForm/> */}
-     {/* <Form/> */}
+            {/* <Items/> */}
+            {/* <RealWorld/> */}
+            {/* ----------form----------- */}
+            {/* <SimpleForm/> */}
+            {/* <Form/> */}
 
-     {/* ------------local-storage--------------- */}
-          {/* <Crud/> */}
-          {/* ---------work---------- */}
-          {/* <SetupForm/> */}
+            {/* ------------local-storage--------------- */}
+            {/* <Crud/> */}
+            {/* ---------work---------- */}
+            {/* <SetupForm/> */}
 
-          {/* Axios */}
+            {/* Axios */}
 
-          {/* <AxiosGet/> */}
-          {/* <AxiosPost/> */}
+            {/* <AxiosGet/> */}
+            {/* <AxiosPost/> */}
 
-          {/* dynamic routing example */}
-          <ProductPage/>
-          
+            {/* dynamic routing example */}
+            {/* <ProductPage/> */}
+            {/* <Routes>
+                <Route path='/' element={<ProductPage/>} />
+                <Route path='/product/:id' element={<ProductDetails />} />
+            </Routes> */}
+
         </>
     )
 }
