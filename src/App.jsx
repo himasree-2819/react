@@ -1,4 +1,4 @@
-import './App.css'
+// import './App.css'
 // import Basic from './Class-components/Basic'
 // import RenderingLists from './embedding-expression/RenderingLists'
 // import Welcome from './embedding-expression/welcome'
@@ -8,11 +8,11 @@ import './App.css'
 // 
 
 
-import ProductPage from './design/dynamic-routing-example/ProductPage'
-import { Route, Routes } from 'react-router-dom'
-import ProductDetails from './design/dynamic-routing-example/ProductDetails'
-import Parent from './functional-components/hooks/UseCallback/Parent'
-import UseMemo from './functional-components/hooks/UseMemo/UseMemo'
+// import ProductPage from './design/dynamic-routing-example/ProductPage'
+// import { Route, Routes } from 'react-router-dom'
+// import ProductDetails from './design/dynamic-routing-example/ProductDetails'
+// import Parent from './functional-components/hooks/UseCallback/Parent'
+// import UseMemo from './functional-components/hooks/UseMemo/UseMemo'
 
 // import SetupForm from "../formwork/Setupform"
 // import Crud from "./local-storage/Cru
@@ -101,7 +101,7 @@ function App() {
 
             {/* <Player/> */}
             {/* <Parent/> */}
-            <UseMemo/>
+            {/* <UseMemo/> */}
 
             {/* //-----------------React-router-dom------------- */}
             {/* //1.---------basic routing---------- */}
@@ -164,6 +164,10 @@ function App() {
                 <Route path='/' element={<ProductPage/>} />
                 <Route path='/product/:id' element={<ProductDetails />} />
             </Routes> */}
+
+            {/* react-hook-form */}
+
+            
 
         </>
     )
