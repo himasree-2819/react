@@ -5,6 +5,9 @@
 // import Calling_function from './embedding-expression/calling_function'
 // import Conditional from './embedding-expression/Conditional'
 
+import BasicHookForm from "./form/react-hook-form/BasicHookForm"
+import YupForm from "./form/yup-react-hook-form/yupform"
+
 // 
 
 
@@ -166,8 +169,10 @@ function App() {
             </Routes> */}
 
             {/* react-hook-form */}
+            {/* <BasicHookForm/> */}
 
-            
+        {/*------------ yup with react hook form ---------*/}
+        <YupForm/>
 
         </>
     )
